@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'Stilu';
+    src: url('../Fuentes/Stilu.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+ }
+
+@font-face {
+    font-family: 'Geomanist';
+    src: url('../Fuentes/Geomanist.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+ }
+
+html {
+    box-sizing: border-box;
+    display: flex;
+  }
+
+body {
+    background-color: aliceblue;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr auto;
+}
+
+header {
+    background-color: antiquewhite;
+    border: solid blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    grid-column: 1;
+    width: fit-content;
+    margin-right: 40px;
+    border-radius: 6px;
+	box-shadow: inset 3px 3px 3px rgba(255,255,255,.7), inset -2px -2px 3px rgba(0,0,0,.1), 2px 2px 10px rgba(0,0,0,.1);
+	text-shadow: 1px 1px 1px rgba(255,255,255,.9);
+}
+
+aside {
+    grid-column: 2;
+}
+
+footer {
+    border: double darkblue;
+    grid-column: 1;
+    width: fit-content;    
+    justify-self: center;
+    margin-top: 40%;
+}
+
+main, nav {
+    grid-column: 1;
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+    font-family: 'Geomanist';
+    color: aliceblue;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Stilu';
+    color: darkorange;
+    font-weight: bold;
+    text-align: center;
+}
+
+#H {
+    margin-right: 40px;
+}
+
+#Perf {
+    color: black;
+    border: solid aquamarine;
+    background-color: darkcyan;
+    max-width: 740px;
+    margin-right: 40px;
+    border-radius: 6px;
+	box-shadow: inset 3px 3px 3px rgba(255,255,255,.7), inset -2px -2px 3px rgba(0,0,0,.1), 2px 2px 10px rgba(0,0,0,.1);
+	text-shadow: 1px 1px 1px rgba(255,255,255,.9);
+}
+
+#Yo {
+    height: auto;
+    width: 30%;
+    max-width: 700px;
+    position: absolute;
+    top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#InfPers, #Exp, #Hab {
+    border: dotted darkred;
+    background-color: darkcyan;
+    max-width: 740px;
+    width: max-content;
+    border-radius: 6px;
+	box-shadow: inset 3px 3px 3px rgba(255,255,255,.7), inset -2px -2px 3px rgba(0,0,0,.1), 2px 2px 10px rgba(0,0,0,.1);
+	text-shadow: 1px 1px 1px rgba(255,255,255,.9);
+}
+
+#Exp {
+    width: 90%;
+}
+
+#InfPers, #Exp, #Hab, #Yo {
+    display: none;
+}
+
+#Facebook, #Instagram, #Linkedin {
+    width: 10vmax;
+    max-width: 200px;
+}
+
+.but1 {
+    border: none;
+    background-color: blue;
+    border-radius: 6px;
+	box-shadow: inset 3px 3px 3px rgba(255,255,255,.7), inset -2px -2px 3px rgba(0,0,0,.1), 2px 2px 10px rgba(0,0,0,.1);
+	text-shadow: 1px 1px 1px rgba(255,255,255,.9);
+	text-align: center;
+}
+
+.but2 {
+    border: none;
+    background-color: darkcyan;
+}
+
+.but3 {
+    border: none;
+    background-color: darkcyan;
+}
+
+#Exp p, #Hab p {
+    margin-left: -68px;
+}
+
+nav ul, #Redes ul {
+    margin-left: -30px;
+}
+
+nav ul, #Redes ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#InfPers li {
+    list-style-type: lower-greek;
+}
+
+@media (max-width: 600px)
+{
+    aside {
+        position: relative;
+        grid-column: 1;
+    }
+}
